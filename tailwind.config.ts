@@ -12,7 +12,14 @@ export default {
 		'./node_modules/layerchart/**/*.{svelte,js}'
 	],
 	theme: {
-		extend: {}
+		extend: {
+			colors: {
+				'surface-100': 'rgb(var(--theme-color-surface-100) / <alpha-value>)',
+				'surface-200': 'rgb(var(--theme-color-surface-200) / <alpha-value>)',
+				'surface-300': 'rgb(var(--theme-color-surface-300) / <alpha-value>)',
+				'surface-content': 'rgb(var(--theme-color-surface-content) / <alpha-value>)',
+			}
+		},
 	},
 	plugins: [
 		forms,
